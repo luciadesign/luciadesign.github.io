@@ -1,7 +1,7 @@
 <div class="project-container">
-	<div class="project">
+	<div class="project" ng-click="click()" id="{{project.anchor}}">
 		<div class="img">
-			<a href="" ng-click="click()" ng-hover="hover()"><img ng-src="{{project.img.src}}"/></a>
+			<a href=""><img ng-src="{{project.img.src}}"/></a>
 		</div>
 		<div class="summary">
 			<p>{{project.summary}}</p>

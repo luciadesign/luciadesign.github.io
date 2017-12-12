@@ -2,7 +2,7 @@ app.factory('projects', function(){
 
 	var projects = [
 		{
-			anchor: '',
+			anchor: '1',
 			title: '',
 			img: {
 				src:'',
@@ -18,7 +18,7 @@ app.factory('projects', function(){
 			]
 		},
 		{
-			anchor: '',
+			anchor: '2',
 			title: '',
 			img: {
 				src:'',
@@ -34,7 +34,7 @@ app.factory('projects', function(){
 			]
 		},
 		{
-			anchor: '',
+			anchor: '3',
 			title: '',
 			img: {
 				src:'',
@@ -50,7 +50,7 @@ app.factory('projects', function(){
 			]
 		},
 		{
-			anchor: '',
+			anchor: '4',
 			title: '',
 			img: {
 				src:'',
@@ -66,7 +66,7 @@ app.factory('projects', function(){
 			]
 		},
 		{
-			anchor: '',
+			anchor: '5',
 			title: '',
 			img: {
 				src:'',
@@ -82,7 +82,7 @@ app.factory('projects', function(){
 			]
 		},
 		{
-			anchor: '',
+			anchor: '6',
 			title: '',
 			img: {
 				src:'',

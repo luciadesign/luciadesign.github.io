@@ -14,7 +14,7 @@ app.run(function($rootScope, $state) {
 		}).css({ opacity: 0, transition: 'opacity 0.5s' })
 	})
 
-	$rootScope.$on('$stateChangeSuccess', function() {
+	$rootScope.$on('$stateChangeSuccess', function(evt, toparams) {
 		$(document).ready(function() {
 			$('div.background').hide().css({ opacity: 0 })
 			$('div.background').slideDown().css({ opacity: 1, transition: 'opacity 0.5s' })

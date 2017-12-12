@@ -14,6 +14,7 @@ html, body {
 	margin: 0 !important;
 	border: none;
 	background-color: #aaa;
+	overflow: hidden;
 }
 
 div.center-container {
@@ -101,4 +102,9 @@ div.project {
 }
 div.project:hover {
 	cursor: pointer;
+}
+
+div.fullproject {
+	width: 100%;
+	height: 100%;
 }
