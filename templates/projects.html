@@ -1,0 +1,8 @@
+<div class="projects background" style="display: none;">
+
+	<i class="up-nav glyphicon glyphicon-chevron-up" ng-click="$emit('navigation:projects:splash')"></i>
+
+	<div class="content">
+		<dir-project ng-repeat="project in projects" project="project"></dir-project>
+	</div>
+</div>

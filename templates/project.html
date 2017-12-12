@@ -1,0 +1,17 @@
+<div class="project background">
+	<div class="content">
+		
+		<div class="title">
+			<h2>{{project.title}}</h2>
+		</div>
+
+		<div class="summary">
+			<p>{{project.intro}}</p>
+		</div>
+
+		<div class="img" ng-repeat="image in project.images">
+			<a href="" ng-click="click()" ng-hover="hover()"><img ng-src="{{image.src}}"/></a>
+		</div>
+
+	</div>
+</div>

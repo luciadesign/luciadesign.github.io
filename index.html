@@ -3,6 +3,10 @@
 <head>
 	<title>Lucia Design</title>
 
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+
 	<!-- CSS Libraries -->
 	<link rel="stylesheet" type="text/css" href="lib/jquery/jquery-ui.css"/>
 	<link rel="stylesheet" type="text/css" href="lib/jquery/jquery-ui.structure.css"/>
@@ -21,6 +25,7 @@
 	<script type="text/javascript" src="lib/bootstrap/jasny-bootstrap/js/jasny-bootstrap.js"></script>
 	<script type="text/javascript" src="lib/angular/angular.js"></script>
 	<script type="text/javascript" src="lib/angular/angular-ui-router.js"></script>
+	<script type="text/javascript" src="lib/angular/angular-animate.js"></script>
 
 	<!-- Begin AngularJS App -->
 
@@ -28,12 +33,21 @@
 		<script type="text/javascript" src="js/app.js"></script>
 
 		<!-- Controllers -->
-		<script type="text/javascript" src="js/controllers/nav.js"></script>
+		<script type="text/javascript" src="js/controller/main.js"></script>
+		<script type="text/javascript" src="js/controller/project.js"></script>
+		<script type="text/javascript" src="js/controller/projects.js"></script>
+		<script type="text/javascript" src="js/controller/splash.js"></script>
+
+		<!-- Factories -->
+		<script type="text/javascript" src="js/factory/projects.js"></script>
+
+		<!-- Directives -->
+		<script type="text/javascript" src="directives/project/controller.js"></script>
 
 	<!-- End AngularJS App -->
 
 </head>
-<body ng-app="luciadesign">
+<body ng-app="luciadesign" ng-controller="controller.main">
 
 	<ui-view></ui-view>
 
