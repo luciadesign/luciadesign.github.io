@@ -19,6 +19,13 @@
 	src: url('fonts/Gotham-LightItalic.otf');
 }
 
+a:focus, a:visited, a:active, a:hover {
+	text-decoration: none;
+}
+a:visited {
+	color: inherit;
+}
+
 h1 {
 	font-family: 'Gotham Light';
 	font-size: 16px;
