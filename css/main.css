@@ -229,11 +229,11 @@ p.summary {
 	display: inline-block;
 }
 .images .image-container img {
-	height: 100%;
+	width: 100%;
 	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-	top: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
 }
 div.inner {
 	width: 100%;
