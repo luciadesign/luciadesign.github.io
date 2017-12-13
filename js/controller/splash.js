@@ -9,4 +9,8 @@ app.controller('controller.splash', function($scope,$state) {
 		}
 	})
 
+	$(document).on('swipeup', function(event) {
+		$scope.$emit('navigation:projects:splash')
+	})
+
 })

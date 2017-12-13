@@ -7,5 +7,9 @@ app.controller('controller.projects', function($scope, projects) {
 			$scope.$emit('navigation:projects:splash')
 		}
 	})
+
+	$(document).on('swipedown', function(event) {
+		$scope.$emit('navigation:projects:splash')
+	})
 	
 })
