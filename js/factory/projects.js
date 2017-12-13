@@ -3,97 +3,169 @@ app.factory('projects', function(){
 	var projects = [
 		{
 			anchor: '1',
-			title: '',
+			title: 'title',
 			img: {
 				src:'',
-				tooltip:''
+				tooltip:'tooltip'
 			},
-			introduction: '',
-			summary: '',
+			introduction: 'introduction',
+			summary: 'summary',
 			images: [
 				{
 					src: '',
-					tooltip: ''
+					tooltip: 'tooltip'
+				},
+				{
+					src: '',
+					tooltip: 'tooltip'
+				},
+				{
+					src: '',
+					tooltip: 'tooltip'
+				},
+				{
+					src: '',
+					tooltip: 'tooltip'
 				}
 			]
 		},
 		{
 			anchor: '2',
-			title: '',
+			title: 'title',
 			img: {
 				src:'',
-				tooltip:''
+				tooltip:'tooltip'
 			},
-			introduction: '',
-			summary: '',
+			introduction: 'introduction',
+			summary: 'summary',
 			images: [
 				{
 					src: '',
-					tooltip: ''
+					tooltip: 'tooltip'
+				},
+				{
+					src: '',
+					tooltip: 'tooltip'
+				},
+				{
+					src: '',
+					tooltip: 'tooltip'
+				},
+				{
+					src: '',
+					tooltip: 'tooltip'
 				}
 			]
 		},
 		{
 			anchor: '3',
-			title: '',
+			title: 'title',
 			img: {
 				src:'',
-				tooltip:''
+				tooltip:'tooltip'
 			},
-			introduction: '',
-			summary: '',
+			introduction: 'introduction',
+			summary: 'summary',
 			images: [
 				{
 					src: '',
-					tooltip: ''
+					tooltip: 'tooltip'
+				},
+				{
+					src: '',
+					tooltip: 'tooltip'
+				},
+				{
+					src: '',
+					tooltip: 'tooltip'
+				},
+				{
+					src: '',
+					tooltip: 'tooltip'
 				}
 			]
 		},
 		{
 			anchor: '4',
-			title: '',
+			title: 'title',
 			img: {
 				src:'',
-				tooltip:''
+				tooltip:'tooltip'
 			},
-			introduction: '',
-			summary: '',
+			introduction: 'introduction',
+			summary: 'summary',
 			images: [
 				{
 					src: '',
-					tooltip: ''
+					tooltip: 'tooltip'
+				},
+				{
+					src: '',
+					tooltip: 'tooltip'
+				},
+				{
+					src: '',
+					tooltip: 'tooltip'
+				},
+				{
+					src: '',
+					tooltip: 'tooltip'
 				}
 			]
 		},
 		{
 			anchor: '5',
-			title: '',
+			title: 'title',
 			img: {
 				src:'',
-				tooltip:''
+				tooltip:'tooltip'
 			},
-			introduction: '',
-			summary: '',
+			introduction: 'introduction',
+			summary: 'summary',
 			images: [
 				{
 					src: '',
-					tooltip: ''
+					tooltip: 'tooltip'
+				},
+				{
+					src: '',
+					tooltip: 'tooltip'
+				},
+				{
+					src: '',
+					tooltip: 'tooltip'
+				},
+				{
+					src: '',
+					tooltip: 'tooltip'
 				}
 			]
 		},
 		{
 			anchor: '6',
-			title: '',
+			title: 'title',
 			img: {
 				src:'',
-				tooltip:''
+				tooltip:'tooltip'
 			},
-			introduction: '',
-			summary: '',
+			introduction: 'introduction',
+			summary: 'summary',
 			images: [
 				{
 					src: '',
-					tooltip: ''
+					tooltip: 'tooltip'
+				},
+				{
+					src: '',
+					tooltip: 'tooltip'
+				},
+				{
+					src: '',
+					tooltip: 'tooltip'
+				},
+				{
+					src: '',
+					tooltip: 'tooltip'
 				}
 			]
 		}

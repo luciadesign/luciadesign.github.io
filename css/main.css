@@ -24,9 +24,20 @@ div.center-container {
 	transform: translate(-50%,-50%);
 }
 div.wrapper {
+	background-color: #ccc;
 	width: 100%;
 	height: 100%;
 	position: relative;
+}
+div.content {
+	background-color: #ddd;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	height: 95%;
+}
+i {
+	background-color: #eee;
 }
 
 div[ui-view] {
@@ -39,10 +50,6 @@ div.background.splash {
 	height: 100%;
 	background-color: #aaa;
 	padding: 10%;
-	position: relative;
-}
-.splash div.content {
-	height: 95%;
 	position: relative;
 }
 .splash h1 {
@@ -83,11 +90,6 @@ div.background.projects {
 	cursor: pointer;
 	color: white;
 }
-.projects div.content {
-	height: 85%;
-	position: relative;
-	margin-top: calc(10% - 50px);
-}
 
 div.project-container {
 	width: 33%;
@@ -98,14 +100,67 @@ div.project-container {
 div.project {
 	width: 100%;
 	height: 100%;
-	background-color: white;
+	background-color: #fff;
 	border-radius: 20px;
+	position: relative;
 }
 div.project:hover {
 	cursor: pointer;
 }
+.project div.img {
+	width: 100%;
+	background-color: #ccc;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.project div.summary {
+	width: 100%;
+	background-color: #ccc;
+	position: absolute;
+	left: 0;
+	bottom: 20px;
+}
 
-div.fullproject {
+div.background.fullproject {
 	width: 100%;
 	height: 100%;
+	background-color: #aaa;
+	padding: 1%;
+	position: relative;
 }
+.fullproject div.wrapper {
+	padding: 1%;
+}
+.fullproject div.content {
+	overflow: scroll;
+}
+.fullproject div.content::-webkit-scrollbar { 
+    display: none; 
+}
+.fullproject div.title {
+	width: 100%;
+	margin: auto;
+	background-color: #bbb;
+}
+.fullproject h2 {
+	text-align: center;
+}
+.fullproject div.summary {
+	width: 100%;
+	margin: auto;
+	background-color: #bbb;
+}
+.fullproject div.img {
+	width: 100%;
+	padding: 25px;
+	margin-top: 25px;
+	background-color: #ccc;
+}
+.fullproject img {
+	width: 100%;
+	height: 500px;
+	background-color: #fff;
+}
+

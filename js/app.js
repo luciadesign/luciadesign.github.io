@@ -2,13 +2,19 @@ var app = angular.module('luciadesign',['ui.router','ngAnimate'])
 
 app.run(function($rootScope, $state) {
 
+	$rootScope.loading = false;
+
 	$rootScope.$on('navigation:projects:splash', function(evt) {
+		if ( $rootScope.loading ) { return; }
+		$rootScope.loading = true;
 		$('div.background').slideUp(function() {
 			$state.go('splash')
 		}).css({ opacity: 0, transition: 'opacity 0.5s' })
 	})
 
 	$rootScope.$on('navigation:splash:projects', function(evt) {
+		if ( $rootScope.loading ) { return; }
+		$rootScope.loading = true;
 		$('div.background').slideUp(function() {
 			$state.go('projects')
 		}).css({ opacity: 0, transition: 'opacity 0.5s' })
@@ -18,6 +24,7 @@ app.run(function($rootScope, $state) {
 		$(document).ready(function() {
 			$('div.background').hide().css({ opacity: 0 })
 			$('div.background').slideDown().css({ opacity: 1, transition: 'opacity 0.5s' })
+			$rootScope.loading = false;
 		})
 	})
 

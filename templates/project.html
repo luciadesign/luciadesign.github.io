@@ -1,17 +1,21 @@
 <div class="fullproject background" style="display: none;">
-	<div class="content">
-		
-		<div class="title">
-			<h2>{{project.title}}</h2>
-		</div>
+	<div class="wrapper">
+		<div class="content">
 
-		<div class="summary">
-			<p>{{project.intro}}</p>
-		</div>
+			<div class="title">
+				<h2>{{project.title}}</h2>
+			</div>
 
-		<div class="img" ng-repeat="image in project.images">
-			<a href="" ng-click="click()" ng-hover="hover()"><img ng-src="{{image.src}}"/></a>
-		</div>
+			<div class="summary">
+				<p>{{project.introduction}}</p>
+			</div>
 
+			<div class="img-wrapper">
+				<div class="img" ng-repeat="image in project.images">
+					<img ng-click="click()" ng-src="{{image.src}}"/>
+				</div>
+			</div>
+
+		</div>
 	</div>
 </div>
