@@ -24,18 +24,22 @@ h2 {
 	font-size: 28px;
 	padding-bottom: 1px;
 	margin-bottom: 3px;
+	color: #4a4a4a;
 }
 h3 {
 	font-family: 'Gotham Light';
 	font-size: 20px;
 	margin: 0;
 	padding: 0;
+	color: #4a4a4a;
+	margin: 5px 0 2px 0;
 }
 p {
 	font-family: 'Gotham Book';
 	font-size: 13px;
 	margin: 0;
 	padding: 0;
+	color: #4a4a4a;
 }
 
 * , *:before, *:after{ 
@@ -103,6 +107,7 @@ span.nav.down {
 	transform: scaleX(2.0);
 	text-align: center;
 	transition: 1.5s;
+	color: #4a4a4a;
 }
 .nav i:hover {
 	transition: 1.5s;
@@ -135,17 +140,16 @@ div.center-container {
 div.project-container {
 	width: 25%;
 	display: inline-block;
-	margin-top: 2%;
 }
 
 div.project-container:nth-child(3n - 2) {
-	margin: 2% 5% 0 0;
+	margin: 3% 5% 0 0;
 }
 div.project-container:nth-child(3n - 1) {
-	margin: 2% 5% 0 5%;
+	margin: 3% 5% 0 5%;
 }
 div.project-container:nth-child(3n - 0) {
-	margin: 2% 0 0 5%;
+	margin: 3% 0 0 5%;
 }
 div.project {
 	width: 100%;
