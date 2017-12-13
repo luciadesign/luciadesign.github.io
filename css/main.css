@@ -99,10 +99,17 @@ div.info-box {
 	bottom: 10%;
 }
 
+div.title-container {
+	width: 100%;
+	max-width: 1200px;
+	padding: 20px 10% 0 10%;
+	margin: auto;
+	position: relative;
+}
 div.title-box {
 	position: absolute;
-	left: 10%;
-	top: 20px;
+	left: 0;
+	top: 0;
 }
 
 span.nav {
