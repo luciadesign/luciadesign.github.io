@@ -27,6 +27,7 @@ app.controller('home', function($scope, $state, projects) {
 	}
 
 	$scope.scrollTop = function() {
+		$scope.state = 'splash'
 		$state.go('home',{ state:'splash' },{notify:false})
 		$(document).ready(function() {
 			$('.page-container')[0].scroll({top:0,left:0,behavior:'smooth'})
@@ -34,7 +35,8 @@ app.controller('home', function($scope, $state, projects) {
 	}
 
 	$scope.scrollBottom = function() {
-		$state.go('home',{ state:'projects' })
+		$scope.state = 'projects'
+		$state.go('home',{ state:'projects' },{notify:false})
 		$(document).ready(function() {
 			var scrollHeight = $('.page-container')[0].scrollHeight
 			$('.page-container')[0].scroll({top:scrollHeight,left:0,behavior:'smooth'})
@@ -57,7 +59,7 @@ app.controller('home', function($scope, $state, projects) {
 	}
 
 	switch ($scope.state) {
-		case 'splash'  : setBottom(); $scope.scrollTop(); break;
-		case 'projects': $scope.scrollBottom(); break;
+		case 'splash'  : $scope.scrollTop(); break;
+		case 'projects': setBottom(); break;
 	}
 })
