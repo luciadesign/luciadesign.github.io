@@ -2,14 +2,14 @@ app.factory('projects', function(){
 
 	var projects = [
 		{
-			anchor: '1',
-			title: 'title',
+			anchor: 'winnie-the-pooh',
+			title: 'Winnie The Pooh',
 			img: {
 				src:'',
 				tooltip:'tooltip'
 			},
 			introduction: 'introduction',
-			summary: 'summary',
+			summary: 'Handmade book cover',
 			images: [
 				{
 					src: '',
@@ -30,14 +30,14 @@ app.factory('projects', function(){
 			]
 		},
 		{
-			anchor: '2',
-			title: 'title',
+			anchor: 'bratislava',
+			title: 'Bratislava',
 			img: {
 				src:'',
 				tooltip:'tooltip'
 			},
 			introduction: 'introduction',
-			summary: 'summary',
+			summary: 'City identity',
 			images: [
 				{
 					src: '',
@@ -58,14 +58,14 @@ app.factory('projects', function(){
 			]
 		},
 		{
-			anchor: '3',
-			title: 'title',
+			anchor: 'oups',
+			title: 'Oups!',
 			img: {
 				src:'',
 				tooltip:'tooltip'
 			},
 			introduction: 'introduction',
-			summary: 'summary',
+			summary: 'Small business identity',
 			images: [
 				{
 					src: '',
@@ -86,14 +86,14 @@ app.factory('projects', function(){
 			]
 		},
 		{
-			anchor: '4',
-			title: 'title',
+			anchor: 'the-space-race',
+			title: 'The Space Race',
 			img: {
 				src:'',
 				tooltip:'tooltip'
 			},
 			introduction: 'introduction',
-			summary: 'summary',
+			summary: 'Film festival',
 			images: [
 				{
 					src: '',
@@ -114,14 +114,14 @@ app.factory('projects', function(){
 			]
 		},
 		{
-			anchor: '5',
-			title: 'title',
+			anchor: 'marvel',
+			title: 'Marvel',
 			img: {
 				src:'',
 				tooltip:'tooltip'
 			},
 			introduction: 'introduction',
-			summary: 'summary',
+			summary: 'Travel magazine',
 			images: [
 				{
 					src: '',
@@ -142,14 +142,14 @@ app.factory('projects', function(){
 			]
 		},
 		{
-			anchor: '6',
-			title: 'title',
+			anchor: 'transcend',
+			title: 'Transcend',
 			img: {
 				src:'',
 				tooltip:'tooltip'
 			},
 			introduction: 'introduction',
-			summary: 'summary',
+			summary: 'Art exhibition',
 			images: [
 				{
 					src: '',

@@ -1,6 +1,6 @@
 /* pink #FBF2F2 */
 /* pink-fade #F3D8D8 */
-/* grey #9b9b9b */
+/* grey #4a4a4a */
 
 @font-face {
 	font-family: 'Gotham Book';
@@ -17,6 +17,23 @@
 @font-face {
 	font-family: 'Gotham Light Italic';
 	src: url('fonts/Gotham-LightItalic.otf');
+}
+
+h2 {
+	font-family: 'Gotham Light';
+	font-size: 28px;
+}
+h3 {
+	font-family: 'Gotham Light';
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+}
+p {
+	font-family: 'Gotham Book';
+	font-size: 13px;
+	margin: 0;
+	padding: 0;
 }
 
 * , *:before, *:after{ 
@@ -96,8 +113,35 @@ div.page.splash {
 }
 
 div.projects-container {
+	margin: auto;
 	width: 100%;
+	max-width: 1200px;
 	height: 100%;
-	background-color: #efefef;
+	padding: 10%;
+}
+
+div.project-container {
+	width: 25%;
+	display: inline-block;
+	margin-top: 2%;
+}
+
+div.project-container:nth-child(3n - 2) {
+	margin: 2% 5% 0 0;
+}
+div.project-container:nth-child(3n - 1) {
+	margin: 2% 5% 0 5%;
+}
+div.project-container:nth-child(3n - 0) {
+	margin: 2% 0 0 5%;
+}
+div.project {
+	width: 100%;
+	background-color: white;
+}
+.project img {
+	width: 100%;
+	height: auto;
+	background-color: #FBF2F2;
 }
 

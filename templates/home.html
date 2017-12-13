@@ -3,7 +3,7 @@
 	<div class="splash page">
 		<div class="splash-img">
 			<div class="info-box">
-				<h1>{{ title }}</h1>
+				<h2>{{ title }}</h2>
 				<p>{{ introduction }}</p>
 			</div>
 
@@ -14,9 +14,19 @@
 	</div>
 
 	<div class="projects page">
+
 		<div class="projects-container" style="display: none;">
-			
+
+			<div ng-repeat="project in projects" class="project-container">
+				<div class="project">
+					<img src="/img/square_test.jpg">
+					<h3>{{ project.title }}</h3>
+					<p>{{ project.summary }}</p>
+				</div>
+			</div>
+
 		</div>
+
 	</div>
 </div>
 
