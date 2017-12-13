@@ -22,6 +22,8 @@
 h2 {
 	font-family: 'Gotham Light';
 	font-size: 28px;
+	padding-bottom: 1px;
+	margin-bottom: 3px;
 }
 h3 {
 	font-family: 'Gotham Light';
@@ -77,10 +79,11 @@ div.page {
 }
 
 div.info-box {
-	width: 400px;
+	width: 100%;
+	max-width: 400px;
 	position: absolute;
-	left: 10%;
-	bottom: 10%;
+	left: 0;
+	bottom: 0;
 }
 
 span.nav {
@@ -108,16 +111,25 @@ span.nav.down {
 	cursor: pointer;
 }
 
+div.wrapper {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
 div.page.splash {
 	background: #FBF2F2 url('/img/eb2d98f71767ce0fe53c925b7efb26a7c4b7c30f.png') no-repeat top right;
 }
 
-div.projects-container {
+div.center-container {
 	margin: auto;
 	width: 100%;
 	max-width: 1200px;
 	height: 100%;
-	padding: 10%;
+	padding: 10% 10% 10% 10%;
 }
 
 div.project-container {
@@ -144,4 +156,18 @@ div.project {
 	height: auto;
 	background-color: #FBF2F2;
 }
+.project img:hover {
+	cursor: pointer;
+}
 
+div.page.brief {
+	background-color: #FBF2F2;
+}
+
+h2.underline {
+	width: 224px;
+	border-bottom: 1px solid black;
+}
+p.summary {
+	font-style: italic;
+}

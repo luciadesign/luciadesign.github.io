@@ -1,25 +1,28 @@
 <div class="home page-container">
 
 	<div class="splash page">
-		<div class="splash-img">
-			<div class="info-box">
-				<h2>{{ title }}</h2>
-				<p>{{ introduction }}</p>
+		<div class="center-container">
+			<div class="wrapper">
+				<div class="info-box">
+					<h2>{{ title }}</h2>
+					<p>{{ introduction }}</p>
+				</div>
 			</div>
-
-			<span class="nav down" ng-click="scrollBottom()">
-				<i class="glyphicon glyphicon-menu-down"></i>
-			</span>
 		</div>
+		
+
+		<span class="nav down" ng-click="scrollBottom()">
+			<i class="glyphicon glyphicon-menu-down"></i>
+		</span>
 	</div>
 
 	<div class="projects page">
 
-		<div class="projects-container" style="display: none;">
+		<div class="center-container projects" style="display: none;">
 
 			<div ng-repeat="project in projects" class="project-container">
 				<div class="project">
-					<img src="/img/square_test.jpg">
+					<img src="/img/square_test.jpg" ng-click="openProject( project.anchor )">
 					<h3>{{ project.title }}</h3>
 					<p>{{ project.summary }}</p>
 				</div>

@@ -14,7 +14,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
 		})
 		.state('project',{
 			url:'/project/{anchor}',
-			templateUrl: '/templates/projects.html',
+			templateUrl: '/templates/project.html',
 			controller: 'project'
 		})
 

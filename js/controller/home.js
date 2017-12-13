@@ -7,11 +7,9 @@ app.controller('home', function($scope, $state, projects) {
 
 	$('.page-container').on('wheel', function(event) {
 		if ( event.originalEvent.wheelDelta < 0 ) {
-			$state.go('home',{ state:'projects' })
 			$scope.scrollBottom();
 		} else {
 			hideProjects()
-			$state.go('home',{ state:'splash' },{notify:false})
 			$scope.scrollTop();
 		}
 	})
@@ -22,22 +20,25 @@ app.controller('home', function($scope, $state, projects) {
 		}
 	})
 
+	$scope.openProject = function( anchor ) {
+		hideProjects(function() {
+			$state.go('project', { anchor: anchor })
+		})
+	}
+
 	$scope.scrollTop = function() {
+		$state.go('home',{ state:'splash' },{notify:false})
 		$(document).ready(function() {
 			$('.page-container')[0].scroll({top:0,left:0,behavior:'smooth'})
 		})
 	}
 
 	$scope.scrollBottom = function() {
+		$state.go('home',{ state:'projects' })
 		$(document).ready(function() {
 			var scrollHeight = $('.page-container')[0].scrollHeight
 			$('.page-container')[0].scroll({top:scrollHeight,left:0,behavior:'smooth'})
 		})
-	}
-
-	switch ($scope.state) {
-		case 'splash'  : setBottom(); $scope.scrollTop(); break;
-		case 'projects': $scope.scrollBottom(); break;
 	}
 
 	function setBottom() {
@@ -47,12 +48,16 @@ app.controller('home', function($scope, $state, projects) {
 		})
 	}
 
-	function hideProjects() {
-		$('div.projects-container').fadeOut(400)
+	function hideProjects(callback) {
+		$('div.center-container.projects').fadeOut(400,callback)
 	}
 
 	function showProjects() {
-		$('div.projects-container').fadeIn(1200)
+		$('div.center-container.projects').fadeIn(1200)
 	}
-	
+
+	switch ($scope.state) {
+		case 'splash'  : setBottom(); $scope.scrollTop(); break;
+		case 'projects': $scope.scrollBottom(); break;
+	}
 })
