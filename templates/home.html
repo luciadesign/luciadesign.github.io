@@ -18,11 +18,11 @@
 
 	<div class="projects page">
 
-		<div class="center-container projects" style="display: none;">
+		<div class="center-container projects">
 
 			<div ng-repeat="project in projects" class="project-container">
 				<div class="project">
-					<img src="/img/square_test.jpg" ng-click="openProject( project.anchor )">
+					<img ng-src="{{ project.img.src }}" ng-click="openProject( project.anchor )">
 					<h3>{{ project.title }}</h3>
 					<p>{{ project.summary }}</p>
 				</div>

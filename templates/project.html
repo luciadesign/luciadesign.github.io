@@ -28,7 +28,7 @@
 				<div class="images-container">
 					<div class="image-container" ng-repeat="image in project.images">
 						<div class="inner">
-							<img src="/img/square_test.jpg">
+							<img ng-src="{{ image.src }}">
 						</div>
 					</div>
 				</div>

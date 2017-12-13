@@ -10,21 +10,12 @@ app.controller('home', function($scope, $state, projects) {
 		if ( event.originalEvent.wheelDelta < 0 ) {
 			$scope.scrollBottom();
 		} else {
-			hideProjects()
 			$scope.scrollTop();
 		}
 	})
 
-	$('.page-container').on('scroll', function(event) {
-		if ( ( event.target.scrollTop >= event.target.scrollHeight / 2 ) && $scope.state == 'projects' ) {
-			showProjects()
-		}
-	})
-
 	$scope.openProject = function( anchor ) {
-		hideProjects(function() {
-			$state.go('project', { anchor: anchor })
-		})
+		$state.go('project', { anchor: anchor })
 	}
 
 	$scope.scrollTop = function() {
@@ -49,14 +40,6 @@ app.controller('home', function($scope, $state, projects) {
 			var scrollHeight = $('.page-container')[0].scrollHeight
 			$('.page-container')[0].scroll({top:scrollHeight,left:0})
 		})
-	}
-
-	function hideProjects(callback) {
-		$('div.center-container.projects').fadeOut(400,callback)
-	}
-
-	function showProjects() {
-		$('div.center-container.projects').fadeIn(1200)
 	}
 
 	switch ($scope.state) {
