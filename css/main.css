@@ -93,14 +93,46 @@ div.info-box {
 span.nav {
 	margin: auto;
 	height: 35px;
+}
+span.nav.down {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 0;
+}
+span.nav.up {
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
 }
-span.nav.down {
-	bottom: 0;
+span.nav.left {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
 }
-.nav i {
+span.nav.right {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.nav.left i, .nav.right i {
+	margin: auto;
+	font-size: 27px;
+	width: 100%;
+	transform: scaleY(2.0);
+	text-align: center;
+	transition: 1.5s;
+	color: #4a4a4a;
+}
+.nav.left i:hover, .nav.right i:hover {
+	transition: 1.5s;
+	color: white;
+	transform: scale(1.5,3.0);
+	cursor: pointer;
+}
+.nav.down i, .nav.up i {
 	margin: auto;
 	font-size: 27px;
 	width: 100%;
@@ -109,7 +141,7 @@ span.nav.down {
 	transition: 1.5s;
 	color: #4a4a4a;
 }
-.nav i:hover {
+.nav.down i:hover, .nav.up i:hover {
 	transition: 1.5s;
 	color: white;
 	transform: scale(3.0,1.5);
@@ -170,8 +202,36 @@ div.page.brief {
 
 h2.underline {
 	width: 235px;
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid #4a4a4a;
 }
 p.summary {
 	font-style: italic;
+}
+
+.images div.wrapper {
+	background-color: #4a4a4a;
+	overflow-x: scroll;
+}
+.images div.wrapper::-webkit-scrollbar { 
+    display: none; 
+}
+.images div.images-container {
+	height: 100%;
+	overflow: hidden;
+}
+.images div.image-container {
+	height: 100%;
+	display: inline-block;
+}
+.images .image-container img {
+	height: 100%;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 0;
+}
+div.inner {
+	width: 100%;
+	height: 100%;
+	position: relative;
 }

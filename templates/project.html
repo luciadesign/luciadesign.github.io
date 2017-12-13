@@ -16,7 +16,28 @@
 	</div>
 
 	<div class="images page">
-
+		<div class="center-container">
+			<span class="nav left" ng-show="show_nav_left" ng-click="navLeft()">
+				<i class="glyphicon glyphicon-menu-left"></i>
+			</span>
+			<span class="nav right" ng-show="show_nav_right" ng-click="navRight()">
+				<i class="glyphicon glyphicon-menu-right"></i>
+			</span>
+			<div class="selector-wrapper">
+				<span class="selector" ng-repeat="image in project.images">
+					<i class="glyphicon {{ $index == selected_image ? 'glyphicon-check' : 'glyphicon-unchecked' }}"></i>
+				</span>
+			</div>
+			<div class="wrapper">
+				<div class="images-container">
+					<div class="image-container" ng-repeat="image in project.images">
+						<div class="inner">
+							<img src="/img/square_test.jpg">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 
