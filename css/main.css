@@ -22,8 +22,9 @@
 h2 {
 	font-family: 'Gotham Light';
 	font-size: 28px;
-	padding-bottom: 1px;
-	margin-bottom: 3px;
+	margin: 
+	padding: 0 0 1px 0;
+	margin: 0 0 3px 0;
 	color: #4a4a4a;
 }
 h3 {
@@ -83,11 +84,11 @@ div.page {
 }
 
 div.info-box {
-	width: 100%;
-	max-width: 400px;
+	height: 200px;
+	width: 400px;
 	position: absolute;
 	left: 0;
-	bottom: 0;
+	bottom: 10%;
 }
 
 span.nav {
@@ -159,6 +160,10 @@ div.wrapper {
 
 div.page.splash {
 	background: #FBF2F2 url('/img/eb2d98f71767ce0fe53c925b7efb26a7c4b7c30f.png') no-repeat top right;
+}
+div.page.projects {
+	height: auto;
+	min-height: 100%;
 }
 
 div.center-container {

@@ -4,6 +4,7 @@ app.controller('home', function($scope, $state, projects) {
 	$scope.title        = "Hello,";
 	$scope.introduction = "I'm Lucia, a Manchester based graphic designer from Slovakia. My passion for visual cultures and storytelling first brought me to the University of Manchester where I earned a degree in Art History. Afterwards I pursued a more functional side of the creative industry and attended the Shillington college of Graphic Design in London. Both of these experiences gave me insight into the wonderful world of all things beautiful and allowed me to not only observe and understand it but to contibute to it as well. I always welcome new exciting challenges so if you enjoy my work please do get in touch about any creative work.";
 	$scope.projects     = projects.getAll()
+	$scope.scrollHeight = 0
 
 	$('.page-container').on('wheel', function(event) {
 		if ( event.originalEvent.wheelDelta < 0 ) {
@@ -15,7 +16,7 @@ app.controller('home', function($scope, $state, projects) {
 	})
 
 	$('.page-container').on('scroll', function(event) {
-		if ( ( event.target.scrollTop == event.target.scrollHeight / 2 ) && $scope.state == 'projects' ) {
+		if ( ( event.target.scrollTop >= event.target.scrollHeight / 2 ) && $scope.state == 'projects' ) {
 			showProjects()
 		}
 	})
