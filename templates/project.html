@@ -6,6 +6,7 @@
 				<div class="info-box">
 					<h2 class="underline">{{ project.title }}</h2>
 					<p>{{ project.summary }}</p>
+					<p class="desc">{{ project.description }}</p>
 				</div>
 			</div>
 		</div>
@@ -17,17 +18,12 @@
 
 	<div class="images page">
 		<div class="center-container">
-			<span class="nav left" ng-show="show_nav_left" ng-click="navLeft()">
+			<span class="nav left" ng-disabled="show_nav_left" ng-click="navLeft()">
 				<i class="glyphicon glyphicon-menu-left"></i>
 			</span>
-			<span class="nav right" ng-show="show_nav_right" ng-click="navRight()">
+			<span class="nav right" ng-disabled="show_nav_right" ng-click="navRight()">
 				<i class="glyphicon glyphicon-menu-right"></i>
 			</span>
-			<div class="selector-wrapper">
-				<span class="selector" ng-repeat="image in project.images">
-					<i class="glyphicon {{ $index == selected_image ? 'glyphicon-check' : 'glyphicon-unchecked' }}"></i>
-				</span>
-			</div>
 			<div class="wrapper">
 				<div class="images-container">
 					<div class="image-container" ng-repeat="image in project.images">
@@ -36,6 +32,16 @@
 						</div>
 					</div>
 				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="footer">
+		<div class="footer-container">
+			<div class="wrapper">
+				<p>Lucia Opaterna</p>
+				<p>luckaopaterna@gmail.com</p>
 			</div>
 		</div>
 	</div>

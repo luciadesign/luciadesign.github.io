@@ -10,6 +10,7 @@ app.factory('projects', function(){
 			},
 			introduction: 'introduction',
 			summary: 'Handmade book cover',
+			description : '',
 			images: [
 				{
 					src: '',
@@ -38,6 +39,7 @@ app.factory('projects', function(){
 			},
 			introduction: 'introduction',
 			summary: 'City identity',
+			description : 'Bratislava is a city...',
 			images: [
 				{
 					src: '',
@@ -66,6 +68,7 @@ app.factory('projects', function(){
 			},
 			introduction: 'introduction',
 			summary: 'Small business identity',
+			description : '',
 			images: [
 				{
 					src: '',
@@ -94,6 +97,7 @@ app.factory('projects', function(){
 			},
 			introduction: 'introduction',
 			summary: 'Film festival',
+			description : '',
 			images: [
 				{
 					src: '',
@@ -122,6 +126,7 @@ app.factory('projects', function(){
 			},
 			introduction: 'introduction',
 			summary: 'Travel magazine',
+			description : '',
 			images: [
 				{
 					src: '',
@@ -150,6 +155,7 @@ app.factory('projects', function(){
 			},
 			introduction: 'introduction',
 			summary: 'Art exhibition',
+			description : '',
 			images: [
 				{
 					src: '',
