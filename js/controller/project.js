@@ -53,19 +53,4 @@ app.controller('project', function($scope, $state, projects) {
 			$('.page-container')[0].scroll({top:scrollHeight,left:0})
 		})
 	}
-
-	$('.page-container').on('wheel', function(event) {
-		if ( event.originalEvent.wheelDelta < 0 ) {
-			$scope.scrollBottom();
-		} else {
-			//hideProjects()
-			$scope.scrollTop();
-		}
-	})
-
-	$('.page-container').on('scroll', function(event) {
-		if ( ( event.target.scrollTop == event.target.scrollHeight / 2 ) && $scope.state == 'projects' ) {
-			//showProjects()
-		}
-	})
 })

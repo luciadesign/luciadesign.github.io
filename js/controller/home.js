@@ -6,14 +6,6 @@ app.controller('home', function($scope, $state, projects) {
 	$scope.projects     = projects.getAll()
 	$scope.scrollHeight = 0
 
-	$('.page-container').on('wheel', function(event) {
-		if ( event.originalEvent.wheelDelta < 0 ) {
-			$scope.scrollBottom();
-		} else {
-			$scope.scrollTop();
-		}
-	})
-
 	$scope.openProject = function( anchor ) {
 		$state.go('project', { anchor: anchor })
 	}
