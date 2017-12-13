@@ -29,153 +29,75 @@
 }
 
 html, body {
-	width: 100% !important;;
-	height: 100% !important;;
-	padding: 0 !important;
-	margin: 0 !important;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
 	border: none;
 	background-color: white;
 	overflow: hidden;
 }
 
-p, i, h1, h2, h3, h4, h5 {
-	color: #9b9b9b;
-}
-
-p {
-	font-family: 'Gotham Light';
-}
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'Gotham Book';
-}
-
-
-div.center-container {
-	position: absolute;
-	left: 0;
-	top: 0;
-}
-div.wrapper {
-	width: 100%;
-	height: 100%;
-	position: relative;
-}
-div.content {
-	width: 100%;
-	height: 100%;
-	position: relative;
-	height: 95%;
-}
-
 div[ui-view] {
-	width: 100% !important;
-	height: 100% !important;
-}
-
-div.background.splash {
 	width: 100%;
 	height: 100%;
-	background-color: #FBF2F2;
-	padding: calc(5% + 25px);
-	position: relative;
-}
-.splash h1 {
-	margin: 0;
-}
-.splash p {
-	margin: 0;
-}
-.splash i.down-nav {
-	text-align: center;
-	font-size: 25px;
-	transition: all .8s ease;
-	width: 100%;
-}
-.splash i.down-nav:hover {
-	transform: scale(2);
-	cursor: pointer;
-	color: white;
 }
 
-div.background.projects {
+div.page-container {
 	width: 100%;
 	height: 100%;
-	background-color: white;
-	padding: 5%;
-	position: relative;
-}
-.projects .content {
-	position: absolute;
-	bottom: 0;
-	height: auto;
-}
-.projects i.up-nav {
-	text-align: center;
-	font-size: 25px;
-	transition: all .8s ease;
-	width: 100%;
-}
-.projects i.up-nav:hover {
-	transform: scale(2);
-	cursor: pointer;
-	color: white;
-}
-
-div.project-container {
-	width: 33%;
-	padding: 0 25px 25px 25px;
-	float: left;
-}
-div.project {
-	width: 100%;
-	position: relative;
-}
-div.project:hover {
-	cursor: pointer;
-}
-.project div.img {
-	width: 100%;
-	height: 200px;
-	background-color: #FBF2F2;
-}
-.project div.summary {
-	width: 100%;
-	position: relative;
-}
-
-div.background.fullproject {
-	width: 100%;
-	height: 100%;
-	padding: 1%;
-	position: relative;
-}
-.fullproject div.wrapper {
-	padding: 1%;
-}
-.fullproject div.content {
 	overflow: scroll;
 }
-.fullproject div.content::-webkit-scrollbar { 
+div.page-container::-webkit-scrollbar { 
     display: none; 
 }
-.fullproject div.title {
+
+div.page {
 	width: 100%;
-	margin: auto;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
 }
-.fullproject h2 {
+
+div.info-box {
+	width: 400px;
+	position: absolute;
+	left: 10%;
+	bottom: 10%;
+}
+
+span.nav {
+	margin: auto;
+	height: 35px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+span.nav.down {
+	bottom: 0;
+}
+.nav i {
+	margin: auto;
+	font-size: 27px;
+	width: 100%;
+	transform: scaleX(2.0);
 	text-align: center;
+	transition: 1.5s;
 }
-.fullproject div.summary {
-	width: 100%;
-	margin: auto;
+.nav i:hover {
+	transition: 1.5s;
+	color: white;
+	transform: scale(3.0,1.5);
+	cursor: pointer;
 }
-.fullproject div.img {
-	width: 100%;
-	padding: 25px;
-	margin-top: 25px;
+
+div.page.splash {
+	background: #FBF2F2 url('/img/eb2d98f71767ce0fe53c925b7efb26a7c4b7c30f.png') no-repeat top right;
 }
-.fullproject img {
+
+div.projects-container {
 	width: 100%;
-	height: 500px;
+	height: 100%;
+	background-color: #efefef;
 }
 
