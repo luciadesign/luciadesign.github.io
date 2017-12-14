@@ -226,7 +226,7 @@ div.project {
 .project img {
 	width: 100%;
 	height: auto;
-	background-color: #FBF2F2;
+	background-color: white;
 }
 .project img:hover {
 	cursor: pointer;
@@ -295,4 +295,12 @@ div.footer-container {
 
 .footer p {
 	font-size: 11px;
+}
+
+img {
+	transition: 0.5s;
+}
+img:hover {
+	transition: 1s;
+	transform: scale(1.05);
 }
