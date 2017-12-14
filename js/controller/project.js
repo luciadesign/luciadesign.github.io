@@ -5,6 +5,29 @@ app.controller('project', function($scope, $state, projects) {
 	$scope.show_nav_left  = false
 	$scope.selected_image = 0
 
+	var loaded_images = []
+	var unloaded = 0
+	for (var i = 0; i < $scope.project.images.length; i++) {
+		unloaded++
+		var imgsrc = $scope.project.images[i].src
+		var img = new Image()
+		img.src = imgsrc
+		img.onload = function() {
+			unloaded--
+			if ( unloaded == 0 ) { testImages() }
+		}
+		loaded_images.push(img)
+	}
+
+	function testImages() {
+		var ratio = $('.images div.wrapper').height() / $('.images div.wrapper').width()
+		for (var i = 0; i < loaded_images.length; i++) {
+			var img = loaded_images[i]
+			$scope.project.images[i].tall = img.height >= img.width*ratio
+		}
+		
+	}
+
 	$(document).ready(sizeImages)
 	$(window).resize(sizeImages)
 

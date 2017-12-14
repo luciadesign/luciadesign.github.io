@@ -37,7 +37,7 @@
 				<div class="images-container">
 					<div class="image-container" ng-repeat="image in project.images">
 						<div class="inner">
-							<img ng-src="{{ image.src }}">
+							<img style="{{ image.tall ? 'height: 100%; width: auto;' : 'width: 100%; height: auto;' }}" ng-src="{{ image.src }}">
 						</div>
 					</div>
 				</div>

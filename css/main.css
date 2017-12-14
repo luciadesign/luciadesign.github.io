@@ -223,11 +223,6 @@ div.project {
 	width: 100%;
 	background-color: white;
 }
-.project img {
-	width: 100%;
-	height: auto;
-	background-color: white;
-}
 .project img:hover {
 	cursor: pointer;
 }
@@ -262,8 +257,8 @@ p.summary {
 	width: 100%;
 	position: absolute;
 	top: 50%;
-	transform: translateY(-50%);
-	left: 0;
+	transform: translate(-50%,-50%);
+	left: 50%;
 }
 div.inner {
 	width: 100%;
