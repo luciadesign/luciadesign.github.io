@@ -25,7 +25,7 @@ app.factory('projects', function(){
 			},
 			introduction: 'introduction',
 			summary: 'City identity',
-			description : 'Bratislava is a city...',
+			description : '',
 			images: [
 				{ src: 'img/bratislava/1.jpg' },
 				{ src: 'img/bratislava/2.jpg' },
